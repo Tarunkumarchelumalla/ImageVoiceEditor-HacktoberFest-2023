@@ -146,240 +146,241 @@
         </div>
       </div>
 
-      <hr />
+      <div class="space-btwn"></div>
 
       <div class="container-fluid" id="about-panel">
         <div class="photo-editor-heading" style="margin-bottom: 20px">
           <h3>About <i class="fa fa-get-pocket"></i></h3>
         </div>
-
-        <h6><b>- Smart Editor 🧠 </b></h6>
-        <h6>
-          A Intermediate Level Project Based on Web Photo Editing but Smartly 🧠
-        </h6>
-        <h6>
-          Smart Editor have two mode that is Manual and Smart, Smart Mode is
-          based On Voice Commands 🎙
-        </h6>
-        <h6>
-          It uses Voice Recognition System for Smart Mode and then voice get
-          converted into text then some script conditions 💻
-        </h6>
-        <h6>
-          It took me <b>15hr</b> to Develop <b>Smart Editor</b>, as i was
-          totally new for this type of Idea 💡
-        </h6>
-        <br />
-        <h6><b>- About Developer</b></h6>
-        <h6>Developer : Rohan S. Prajapati</h6>
-        <h6>Project : Smart Editor 🧠</h6>
-        <h6>Project For : CSS ( client side scripting ) (javascript)</h6>
-        <h6>Roll No : 1520</h6>
-        <h6>Enrollment No. : 1900440052</h6>
-        <h6>Branch : CO</h6>
-        <h6>Sem : 5th</h6>
-        <h6>Year : TY</h6>
+        <div class="content-contianer">
+          <h6><b>- Smart Editor 🧠 </b></h6>
+          <h6>
+            A Intermediate Level Project Based on Web Photo Editing but Smartly 🧠
+          </h6>
+          <h6>
+            Smart Editor have two mode that is Manual and Smart, Smart Mode is
+            based On Voice Commands 🎙
+          </h6>
+          <h6>
+            It uses Voice Recognition System for Smart Mode and then voice get
+            converted into text then some script conditions 💻
+          </h6>
+          <h6>
+            It took me <b>15hr</b> to Develop <b>Smart Editor</b>, as i was
+            totally new for this type of Idea 💡
+          </h6>
+          <br />
+          <h6><b>- About Developer</b></h6>
+          <h6>Developer : Rohan S. Prajapati</h6>
+          <h6>Project : Smart Editor 🧠</h6>
+          <h6>Project For : CSS ( client side scripting ) (javascript)</h6>
+          <h6>Roll No : 1520</h6>
+          <h6>Enrollment No. : 1900440052</h6>
+          <h6>Branch : CO</h6>
+          <h6>Sem : 5th</h6>
+          <h6>Year : TY</h6>
+        </div>
       </div>
-
       <div class="container-fluid" id="photo-editor-panel">
         <div class="photo-editor-heading">
           <h3>Photo Editor <i class="fa fa-image"></i></h3>
         </div>
+        <div class="content-contianer">
+          <div class="row">
+            <div class="col-6" id="image-input-box">
+              <div class="mb-3">
+                <label for="formFileSm" class="form-label">Open Image</label>
+                <input
+                  class="form-control form-control-sm"
+                  id="Inputimage"
+                  type="file"
+                  accept="image/png, image/jpeg, image/jpg"
+                />
+              </div>
 
-        <div class="row">
-          <div class="col-4" id="image-input-box">
-            <div class="mb-3">
-              <label for="formFileSm" class="form-label">Open Image</label>
-              <input
-                class="form-control form-control-sm"
-                id="Inputimage"
-                type="file"
-                accept="image/png, image/jpeg, image/jpg"
-              />
-            </div>
+              <div id="confirm-image-box">
+                <img
+                  src=""
+                  class="img-thumbnail"
+                  alt="..."
+                  id="thumbnail-image-confirmation"
+                />
+                <br />
 
-            <div id="confirm-image-box">
-              <img
-                src=""
-                class="img-thumbnail"
-                alt="..."
-                id="thumbnail-image-confirmation"
-              />
-              <br />
-
-              <div class="btn-group" role="group">
-                <button type="button" class="btn btn-success" id="confirmImage">
-                  Confirm
-                </button>
-                &nbsp;
-                <button type="button" class="btn btn-danger" id="cancleImage">
-                  Cancle
-                </button>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-success" id="confirmImage">
+                    Confirm
+                  </button>
+                  &nbsp;
+                  <button type="button" class="btn btn-danger" id="cancleImage">
+                    Cancle
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-6" id="canvasBox">
-            <canvas id="Imagecanvas"> </canvas>
-          </div>
-
-          <div class="col-3" id="imageOperationBox">
-            <label for="customRange1" class="form-label">
-              Sepia - <input type="checkbox" id="sepia_checkbox" />
-            </label>
-            <br />
-
-            <label for="customRange1" class="form-label">
-              Brightness - <label id="brightness_range_counter">100</label>%
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="100"
-              class="form-range"
-              id="brightness_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Contrast - <label id="contrast_range_counter">100</label>%
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="100"
-              class="form-range"
-              id="contrast_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Saturation - <label id="saturate_range_counter">100</label>%
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="100"
-              class="form-range"
-              id="saturate_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Blur - <label id="blur_range_counter">0</label>%
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="0"
-              class="form-range"
-              id="blur_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Hue Rotate - <label id="hue_range_counter">0</label> Deg
-            </label>
-            <input
-              type="range"
-              min="-360"
-              max="360"
-              value="0"
-              class="form-range"
-              id="hue_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Gray Scale - <label id="grayscale_range_counter">0</label> %
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value="0"
-              class="form-range"
-              id="grayscale_range"
-            />
-
-            <!-- <label for="customRange1" class="form-label">
-                        Opacity - <label id="opacity_range_counter">0</label> %    
-                    </label>
-                    <input type="range" min="0" max="100" value="0" class="form-range" id="opacity_range"> -->
-          </div>
-
-          <div class="col-2" id="imageOperationBox2">
-            <label for="customRange1" class="form-label">
-              Invert - <label id="invert_range_counter">0</label> %
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="100"
-              value="0"
-              class="form-range"
-              id="invert_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Drop Shadow X -
-              <label id="drop_shadow_x_range_counter">0</label> px
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="0"
-              class="form-range"
-              id="drop_shadow_x_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Drop Shadow Y -
-              <label id="drop_shadow_y_range_counter">0</label> px
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="0"
-              class="form-range"
-              id="drop_shadow_y_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Drop Shadow Blur -
-              <label id="drop_shadow_blur_range_counter">0</label> px
-            </label>
-            <input
-              type="range"
-              min="0"
-              max="1000"
-              value="0"
-              class="form-range"
-              id="drop_shadow_blur_range"
-            />
-
-            <label for="customRange1" class="form-label">
-              Drop Shadow Color - <label id="drop_shadow_color_counter"></label>
-            </label>
-            <input type="color" class="form-range" id="drop_shadow_color" />
-
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Download
-              </button>
-              &nbsp;
-              <button type="button" id="reset_image_filter">
-                Reset Filter's
-              </button>
-              &nbsp;
-              <button type="button" id="reset_image">Reset Image</button>
+            <div class="col-6" id="canvasBox">
+              <canvas id="Imagecanvas"> </canvas>
             </div>
-            <br />
-            <button type="button" id="imagecompare" value="0">Show Old</button>
+
+            <div class="col-3" id="imageOperationBox">
+              <label for="customRange1" class="form-label">
+                Sepia - <input type="checkbox" id="sepia_checkbox" />
+              </label>
+              <br />
+
+              <label for="customRange1" class="form-label">
+                Brightness - <label id="brightness_range_counter">100</label>%
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="100"
+                class="form-range"
+                id="brightness_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Contrast - <label id="contrast_range_counter">100</label>%
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="100"
+                class="form-range"
+                id="contrast_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Saturation - <label id="saturate_range_counter">100</label>%
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="100"
+                class="form-range"
+                id="saturate_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Blur - <label id="blur_range_counter">0</label>%
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="0"
+                class="form-range"
+                id="blur_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Hue Rotate - <label id="hue_range_counter">0</label> Deg
+              </label>
+              <input
+                type="range"
+                min="-360"
+                max="360"
+                value="0"
+                class="form-range"
+                id="hue_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Gray Scale - <label id="grayscale_range_counter">0</label> %
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="form-range"
+                id="grayscale_range"
+              />
+
+              <!-- <label for="customRange1" class="form-label">
+                          Opacity - <label id="opacity_range_counter">0</label> %    
+                      </label>
+                      <input type="range" min="0" max="100" value="0" class="form-range" id="opacity_range"> -->
+            </div>
+
+            <div class="col-2" id="imageOperationBox2">
+              <label for="customRange1" class="form-label">
+                Invert - <label id="invert_range_counter">0</label> %
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="form-range"
+                id="invert_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Drop Shadow X -
+                <label id="drop_shadow_x_range_counter">0</label> px
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="0"
+                class="form-range"
+                id="drop_shadow_x_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Drop Shadow Y -
+                <label id="drop_shadow_y_range_counter">0</label> px
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="0"
+                class="form-range"
+                id="drop_shadow_y_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Drop Shadow Blur -
+                <label id="drop_shadow_blur_range_counter">0</label> px
+              </label>
+              <input
+                type="range"
+                min="0"
+                max="1000"
+                value="0"
+                class="form-range"
+                id="drop_shadow_blur_range"
+              />
+
+              <label for="customRange1" class="form-label">
+                Drop Shadow Color - <label id="drop_shadow_color_counter"></label>
+              </label>
+              <input type="color" class="form-range" id="drop_shadow_color" />
+
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Download
+                </button>
+                &nbsp;
+                <button type="button" id="reset_image_filter">
+                  Reset Filter's
+                </button>
+                &nbsp;
+                <button type="button" id="reset_image">Reset Image</button>
+              </div>
+              <br />
+              <button type="button" id="imagecompare" value="0">Show Old</button>
+            </div>
           </div>
         </div>
       </div>
@@ -410,8 +411,6 @@
                         </div>
                     </div>
                 </div> -->
-
-          <br /><br /><br /><br /><br /><br /><br />
 
           <div class="col-sm-6">
             <div class="card smart-mode-card">

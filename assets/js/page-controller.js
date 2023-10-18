@@ -7,10 +7,15 @@ function updateNav(targetid){
 }
 
 function openPhotoEditor(){
-    $("#home-panel").slideUp(500);
-    $("#photo-editor-panel").slideDown();
-    $("#about-panel").slideUp(300);
+    // $("#home-panel").slideUp(500);
+    // $("#photo-editor-panel").slideDown();
+    // $("#about-panel").slideUp(300);
+    // updateNav("photo-editor-nav");
+    $("#home-panel").hide();
+    $("#photo-editor-panel").show();
+    $("#about-panel").hide()
     updateNav("photo-editor-nav");
+
 }
 
 function openVideoEditor(){
@@ -18,17 +23,25 @@ function openVideoEditor(){
 }
 
 function openHomePanel(){
-    $("#photo-editor-panel").slideUp(500);
-    $("#home-panel").slideDown();
-    $("#about-panel").slideUp(300);
+    // $("#photo-editor-panel").slideUp(500);
+    // $("#home-panel").slideDown();
+    // $("#about-panel").slideUp(300);
+    // updateNav("home-nav");
+    $("#home-panel").show();
+    $("#photo-editor-panel").hide();
+    $("#about-panel").hide()
     updateNav("home-nav");
 }
 
 function openAboutPanel(){
-    $("#photo-editor-panel").slideUp(500);
-    $("#home-panel").slideUp();
-    $("#about-panel").slideDown();
-    updateNav("about-nav");
+    // $("#photo-editor-panel").slideUp(500);
+    // $("#home-panel").slideUp();
+    // $("#about-panel").slideDown();
+    // updateNav("about-nav");
+    $("#home-panel").hide();
+    $("#photo-editor-panel").hide();
+    $("#about-panel").show()
+    updateNav("about-panel");
 }
 
 $(document).ready(function(){
