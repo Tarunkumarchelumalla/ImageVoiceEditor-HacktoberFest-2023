@@ -73,6 +73,12 @@
 .content-contianer{
     padding:20px 40px;
 }
+.container-fluid{
+    padding-top: 12px;
+}
+.content-contianer{
+    padding:20px 40px;
+}
 .nav-link:hover{
     transform: scale(1.1);
    
